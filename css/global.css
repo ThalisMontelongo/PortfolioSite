@@ -29,6 +29,11 @@ body {
  .subtitulo {
   font-size: 8rem;
   line-height: 1;
+  text-transform: uppercase;
   word-break: break-all;
   max-width: 5ch;
+ }
+
+ .color-test {
+  background: #141414;
  }
