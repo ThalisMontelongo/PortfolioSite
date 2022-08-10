@@ -58,19 +58,33 @@
   color: #545454;
 }
 
-.empresa-habilidade {
-  font-display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-  align-content: start;
-  
+@media (max-width: 800px){
+
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .experiencia .subtitulo {
+    color: #141414
+  }
+  .experiencia-texto {
+    font-size: 1.25rem;
+  }
+  .empresa-ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+  .empresa-ano::before {
+    content: "Ano: ";
+  }
 }
 
-.empresa-habilidade li {
-  font-size:  0.875rem;
-  line-height: 1.4;
-  border-radius: 5px;
-  background: #fff;
-  padding: 5px 10px;
+@media (max-width: 400px) {
+  .empresa {
+    grid-template-columns: 1fr;
+    
+  }
 
 }
